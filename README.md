@@ -33,3 +33,26 @@ Ensure you have a modern Python 3 installation on your system. No external third
 1. Clone the repository:
    ```bash
    git clone [https://github.com/yourusername/turtle-2d-racing-game.git](https://github.com/yourusername/turtle-2d-racing-game.git)
+
+2. Navigate into the project directory:
+   ```bash
+   cd turtle-2d-racing-game
+
+3. Execute the primary application driver:
+   ```bash
+   python main.py
+   
+## Game Rules & Execution Flow
+
+1. **Player Initialization:** Set the active participant count (1–4 players). Each profile initializes with a default base balance of $100.
+2. **Wager Phase:** Interactively select target runner color (`red`, `blue`, `orange`, `purple`) and specify wager allocations constrained to current liquidity.
+3. **Execution Phase:** Watch real-time execution as runners traverse the track geometry toward the boundary coordinate ($x = 320$).
+4. **State Resolution:** Victorious selections yield a 1:1 payout return and increment win streaks; incorrect bets deduct allocated funds and reset active streaks to zero.
+
+---
+
+## Project Structure
+
+```text
+├── main.py          # Core application driver containing GUI setup, track rendering, and game loops
+└── README.md        # Technical documentation and execution guide
